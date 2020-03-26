@@ -1,0 +1,23 @@
+.dark {
+  background-color: black;
+  color: white;
+}
+
+.margin-auto {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.sans-serif {
+  font-family: sans-serif;
+}
+
+.background-image {
+  background-image: url(https://www.pythoncircle.com/media/uploads/desktop-wallpaper-change-python-20190823-d0843f2cd287490f8e1eeaa712e0f689.jpeg);
+  background-size: cover;
+  background-position-x: 50%;
+}
+
+.large-font {
+  font-size: 1.5em;
+}
