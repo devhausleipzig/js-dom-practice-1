@@ -25,18 +25,18 @@ document.querySelector("body");
 document.querySelector("#dark-mode-button");
 document.querySelector(".controls h1");
 
-var heading = document.querySelector("h1");
+const heading = document.querySelector("h1");
 heading.nextElementSibling;
 heading.nextElementSibling.nextElementSibling;
 
 heading.textContent = "New Heading!!!";
 document.querySelector("h1").textContent = "This works???";
 
-var currentTextContent = heading.textContent;
+const currentTextContent = heading.textContent;
 heading.textContent = "Yet another new Heading";
 currentTextContent;
 
-var main = document.querySelector("main");
+const main = document.querySelector("main");
 main.innerHTML = "<h2>We can insert HTML inside an element</h2>";
 main.classList.add("dark");
 main.classList.remove("dark");
@@ -54,7 +54,7 @@ Inside the `main.js` file we will now define some functions that will toggle the
 First we'll create a binding that refers to the main section using the `document.querySelector`
 
 ```js
-var mainElement = document.querySelector("main");
+const mainElement = document.querySelector("main");
 ```
 
 Here is the statement that would toggle the class `dark` on that element.
@@ -66,7 +66,7 @@ mainElement.classList.toggle("dark");
 This is a relatively complex expression. We can wrap this statement inside a function to give it a memorable name and also make it executable from the console. The syntax looks like this.
 
 ```js
-var toggleDarkMode = function() {
+const toggleDarkMode = function() {
   mainElement.classList.toggle("dark");
 };
 ```
