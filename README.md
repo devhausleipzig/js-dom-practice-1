@@ -87,7 +87,7 @@ Now it's time to actually connect these functions to the buttons on the page.
 First we need a reference to the buttons them selves. Each button has been given an id attribute in the html file, so we can use a simple query selector to get a hold of it. Here's the example for the dark mode button.
 
 ```js
-var darkModeButton = document.querySelector("#dark-mode-button");
+const darkModeButton = document.querySelector("#dark-mode-button");
 ```
 
 Next up we will use the `addEventListener` method on the `darkModeButton`. This is an extremely important function, which gives us the oportunity to register a javascript function to be executed whenever a certain event is happening. In this example we are _listening_ to the `"click"` event.
@@ -110,12 +110,12 @@ You have written a lot of repetitive code now. There's a rule in Programming tha
 JavaScript has a lot of tools to reduce repetition in your code, which almost all are based on functions. Here we can use function parameters to abstract the buttonId and the className from the repetitive code. Here is a function that will combine all the steps. Notice how the parenthesis after the functionName now list two identifiers. These are the function parameters.
 
 ```js
-var setupToggleClassButton = function(buttonId, className) {
-  var mainElement = document.querySelector("main");
-  var toggleClass = function() {
+const setupToggleClassButton = function(buttonId, className) {
+  const mainElement = document.querySelector("main");
+  const toggleClass = function() {
     mainElement.classList.toggle(className);
   };
-  var button = document.querySelector(buttonId);
+  const button = document.querySelector(buttonId);
   button.addEventListener("click", toggleClass);
 };
 ```
