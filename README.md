@@ -1,20 +1,10 @@
 # Javascript Kickstart
 
-## Challenges
-
-<h3 class="challenge" id="js-console-start" data-points="3">Getting used to the Javascript Console</h3>
-
-Start by cloning this repository and open it in Visual Studio Code: https://github.com/gabrielheinrich/js-kickstart
-
-```bash
-cd ~/Developer
-git clone https://github.com/gabrielheinrich/js-kickstart
-code -r js-kickstart
-```
+Clone this repository and open it in Visual Studio Code.
 
 Open the index.html file in your browser and open the Javascript console: `Cmd+Alt+J` or `Ctrl+Alt+J`
 
-In the console type these commands. Each line you run is a javascript statement. You can leave out the semicolon at the end for convenience.
+In the console type these commands. Each line you run is a JavaScript statement. You can leave out the semicolon at the end for convenience.
 
 After running each command notice what is happening and try to understand what the command does. Feel also free to try out other variations by yourself and experiment.
 
@@ -56,7 +46,7 @@ main.classList.toggle("dark");
 
 Refresh the page to reset it before you go on to the next step.
 
-<h3 class="challenge" id="js-kickstart-styling-functions" data-points="3">Styling Functions</h3>
+## Styling Functions
 
 Take a look at the `style.css` file. It defines some classes that change some aspect of the styling and could be applied to the main section.
 
@@ -91,7 +81,7 @@ You should see the main section changing colors from a white background to a bla
 
 Go ahead and create similar functions for the other classes.
 
-<h3 class="challenge" id="js-kickstart-buttons" data-points="3">Buttons &amp; Event Listeners</h3>
+## Buttons & Event Listeners
 
 Now it's time to actually connect these functions to the buttons on the page.
 First we need a reference to the buttons them selves. Each button has been given an id attribute in the html file, so we can use a simple query selector to get a hold of it. Here's the example for the dark mode button.
@@ -113,11 +103,11 @@ Now go to the website and click on the button to see if it actually will trigger
 
 If that works fill in the code for the other 5 buttons.
 
-<h3 class="challenge" id="js-kickstart-dry" data-points="3">Dry Refactoring</h3>
+## DRY Refactoring
 
-You have written a lot of repetitive code now. There's a rule in Programming that dictates to stay close to DRY: Don't Repeat Yourself.
+You have written a lot of repetitive code now. There's a rule in Programming that dictates to stay DRY: Don't Repeat Yourself.
 
-Javascript has a lot of tools to reduce repetition in your code, which almost all are based on functions. Here we can use function parameters to abstract the buttonId and the className from the repetitive code. Here is a function that will combine all the steps. Notice how the parenthesis after the functionName now list two identifiers. These are the function parameters.
+JavaScript has a lot of tools to reduce repetition in your code, which almost all are based on functions. Here we can use function parameters to abstract the buttonId and the className from the repetitive code. Here is a function that will combine all the steps. Notice how the parenthesis after the functionName now list two identifiers. These are the function parameters.
 
 ```js
 var setupToggleClassButton = function(buttonId, className) {
@@ -138,11 +128,11 @@ setupToggleClassButton("#dark-mode-button", "dark");
 
 With this function available, refactor your code for all the buttons. Why do you think programmers came up with DRY as a best practice. It's not just about having to type less.
 
-### Extra
+## Extra
 
-Come up with new css classes which change some part of the styling and create buttons to toggle them on and off.
+Come up with new CSS classes which change some part of the styling and create buttons to toggle them on and off.
 
-You can also use more complex css selectors to target specific elements of the page, e.g.
+You can also emulate more complex CSS selectors to target specific elements of the page, e.g.
 
 ```css
 .blue-headings h1,
@@ -150,3 +140,5 @@ You can also use more complex css selectors to target specific elements of the p
   color: blue;
 }
 ```
+
+but using JavaScript instead.
