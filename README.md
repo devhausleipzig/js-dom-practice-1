@@ -2,7 +2,7 @@
 
 Clone this repository and open it in Visual Studio Code.
 
-Open the index.html file in your browser and open the Javascript console: `Cmd+Alt+J` or `Ctrl+Alt+J`
+Open the index.html file in your browser and open the JavaScript console: `Cmd+Alt+J` or `Ctrl+Alt+J`. You can also find the JavaScript console via the dev tools by hitting the `F12` button.
 
 In the console type these commands. Each line you run is a JavaScript statement. You can leave out the semicolon at the end for convenience.
 
