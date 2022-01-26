@@ -51,7 +51,7 @@ Refresh the page to reset it before you go on to the next step.
 Take a look at the `style.css` file. It defines some classes that change some aspect of the styling and could be applied to the main section.
 
 Inside the `main.js` file we will now define some functions that will toggle theses classes on and off.
-First we'll create a variable that stores a reference to the main section using the `document.querySelector`
+First we'll create a binding that refers to the main section using the `document.querySelector`
 
 ```js
 var mainElement = document.querySelector("main");
