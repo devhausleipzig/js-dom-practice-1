@@ -1,4 +1,4 @@
-# JS DOM Practice 1
+# JavaScript DOM Practice 1
 
 Clone this repository and open it in Visual Studio Code.
 
