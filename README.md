@@ -103,7 +103,7 @@ Now go to the website and click on the button to see if it actually will trigger
 
 If that works fill in the code for the other 5 buttons.
 
-## DRY Refactoring
+## OPTIONAL: DRY Refactoring
 
 You have written a lot of repetitive code now. There's a rule in Programming that dictates to stay DRY: Don't Repeat Yourself.
 
@@ -128,7 +128,7 @@ setupToggleClassButton("#dark-mode-button", "dark");
 
 With this function available, refactor your code for all the buttons. Why do you think programmers came up with DRY as a best practice. It's not just about having to type less.
 
-## Extra
+## OPTIONAL: Extra Credit
 
 Come up with new CSS classes which change some part of the styling and create buttons to toggle them on and off.
 
